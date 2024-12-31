@@ -1,72 +1,64 @@
-
-
 .blogMainContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    z-index: 1;
-    overflow: hidden;
-    background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1;
+  overflow: hidden;
+  background: transparent;
 }
 
 .blogPortraitBox {
-    margin-top: 10px;
-    width: 60%;
-    max-width: 80vw;
-    height: 80%;
-    background: rgba(38, 36, 36, 0.4);
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20px;
-    overflow-y: auto;
-    scroll-behavior: smooth;
+  margin-top: 10px;
+  width: 60%;
+  max-width: 80vw;
+  height: 80%;
+  background: rgba(38, 36, 36, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
-
 
 .blogWrapper {
-    height: 100vh;
-    /*This part is important for centering*/
-    display: grid;
-    place-items: center;
+  height: 100dvh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
 }
-.typing{
-    width: 15ch;
-    animation:
-            typing 2s steps(13) forwards, /* Typing animation */
-            blink 1s step-end infinite; /* Cursor blink */
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-size: 2em;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
-    color: whitesmoke;
+.typing {
+  width: 15ch;
+  animation: typing 2s steps(13) forwards,
+    /* Typing animation */ blink 1s step-end infinite; /* Cursor blink */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 2em;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  color: whitesmoke;
 }
 @keyframes typing {
-    from {
-        width: 0
-    }
+  from {
+    width: 0;
+  }
 }
 
 @keyframes blink {
-    0%, 100% {
-        border-color: whitesmoke; /* Cursor visible */
-    }
-    50% {
-        border-color: transparent; /* Cursor hidden */
-    }
+  0%,
+  100% {
+    border-color: whitesmoke; /* Cursor visible */
+  }
+  50% {
+    border-color: transparent; /* Cursor hidden */
+  }
 }
-
-
-
-
-

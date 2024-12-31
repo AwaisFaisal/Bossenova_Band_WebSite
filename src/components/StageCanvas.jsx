@@ -48,17 +48,17 @@ const StageCanvas = ({ positions }) => {
 
   const [logoVisible, setLogoVisible] = useState(true);
 
-  useEffect(() => {
-    if (cameraRef.current) {
-      const camera = cameraRef.current;
-      camera.position.set(...positions[currentIndex].position);
-      camera.lookAt(...positions[currentIndex].target);
+  //   useEffect(() => {
+  //     if (cameraRef.current) {
+  //       const camera = cameraRef.current;
+  //       camera.position.set(...positions[currentIndex].position);
+  //       camera.lookAt(...positions[currentIndex].target);
 
-      camera.near = 1;
-      camera.far = 5000;
-      camera.updateProjectionMatrix();
-    }
-  }, [currentIndex, positions]);
+  //       camera.near = 1;
+  //       camera.far = 5000;
+  //       camera.updateProjectionMatrix();
+  //     }
+  //   }, [currentIndex, positions]);
 
   //Effects Animation
   const handleButtonClick = () => {
