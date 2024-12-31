@@ -1,64 +1,64 @@
 .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: transparent;
-    color: #8a8484;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    align-items: center;
-    z-index: 1000;
-    font-family: 'Montserrat', serif;
-    font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  color: #8a8484;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  z-index: 1;
+  font-family: "Montserrat", serif;
+  font-size: 12px;
 }
 
-.footer-left{
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 .footer-left p {
-    margin: 0;
-    line-height: 1.2;
+  margin: 0;
+  line-height: 1.2;
 }
 
 .footer-left a {
-    color: #8a8484;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+  color: #8a8484;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .footer-left a:hover {
-    color: #ffd700;
-    text-decoration: underline;
+  color: #ffd700;
+  text-decoration: underline;
 }
 
 .footer-right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
 }
 
 .muteButton {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
 }
 
 .muteButton svg {
-    width: 32px;
-    height: 32px;
-    fill: #8a8484; /* Makes the icon grey */
-    transition: transform 0.2s ease, fill 0.2s ease;
+  width: 32px;
+  height: 32px;
+  fill: #8a8484; /* Makes the icon grey */
+  transition: transform 0.2s ease, fill 0.2s ease;
 }
 
 .muteButton:hover svg {
-    transform: scale(1.1);
-    fill: #ffd700; /* Change to gold on hover */
+  transform: scale(1.1);
+  fill: #ffd700; /* Change to gold on hover */
 }
