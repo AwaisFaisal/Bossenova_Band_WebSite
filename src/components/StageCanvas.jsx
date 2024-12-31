@@ -12,6 +12,7 @@ import MenuSection from "../sections/MenuSection.jsx";
 import styles from "../styles/StageCanvas.module.css";
 
 import modelPath from "/src/assets/models/stage_final.glb";
+import { ScrollTrigger } from "gsap/all";
 
 const StageModel = () => {
   const gltf = useGLTF(modelPath, true); // Path to Draco decoder
@@ -20,6 +21,10 @@ const StageModel = () => {
 
 const StageCanvas = ({ positions }) => {
   const cameraRef = useRef();
+
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.config({ ignoreMobileResize: true });
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isButtonVisible, setIsButtonVisible] = useState(true);
   const [isMenuVisible, setIsMenuVisible] = useState(false);
